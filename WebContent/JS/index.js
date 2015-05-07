@@ -2,20 +2,17 @@
  * 
  */
 
-$('#cc').layout();    
-// collapse the west panel    
-$('#cc').layout('collapse','west');  
+$(function(){ 
 
-$('#cc').layout('add',{    
-    region: 'west',    
-    width: 180,    
-    title: 'West Title',    
-    split: true,    
-    tools: [{    
-        iconCls:'icon-add',    
-        handler:function(){alert('add')}    
-    },{    
-        iconCls:'icon-remove',    
-        handler:function(){alert('remove')}    
+$('#tt').tabs('add',{    
+    title:'New Tab',    
+    content:'Tab Body', 
+    closable:true,
+    tools:[{    
+        iconCls:'icon-mini-refresh',    
+        handler:function(){    
+            alert('refresh');    
+        }    
     }]    
-});  
+}); 
+}); 
