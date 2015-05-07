@@ -38,26 +38,25 @@
 	<div data-options="region:'west',title:'菜单栏',split:true"
 		style="width: 200px;">
 		<!-- 手风琴菜单 -->
-		<div id="according-list" class="easyui-accordion"
-			data-options="fit:true">
+		<div class="easyui-accordion" data-options="fit:true">
 			<div id="ul-list" title="菜单一" data-options="selected:true"
 				style="overflow: auto; padding: 10px;">
 				<ul id="tto" class="easyui-tree">
-					<li><span><a id = "tt" href="#">File 1</a></span></li>
-					<li><span>File 2</span></li>
-					<li><span>File 3</span></li>
-					<li><span>File 4</span></li>
-				</ul>	
-			</div> 
-			<div title="Title2" data-options="" style="padding: 10px;">content2</div>
-			<div title="Title3">content3</div>
+					<li><a id="tt1" href="#">File 1</a></li>
+					<li><a id="tt2" href="#">File 2</a></li>
+					<li><a id="tt3" href="#">File 3</a></li>
+					<li><a id="tt4" href="#">File 4</a></li>
+				</ul>
+			</div>
+			<div title="菜单二" data-options="" style="padding: 10px;">content2</div>
+			<div title="菜单三">content3</div>
 		</div>
 	</div>
 	<!-- 中间内容center -->
 	<div data-options="region:'center'"
 		style="padding: 5px; background: #eee;">
 		<!-- 首页tabs -->
-		<div id="tt" class="easyui-tabs" data-options="fit:true">
+		<div id="mainTabs" class="easyui-tabs" data-options="fit:true">
 			<div title="首页">
 				<p>gg</p>
 			</div>
